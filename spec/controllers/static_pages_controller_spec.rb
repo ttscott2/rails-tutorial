@@ -21,4 +21,11 @@ RSpec.describe StaticPagesController, :type => :controller do
       expect(response.status).to eq(200)
     end
   end
+
+  describe "GET contact" do
+    it "has a 200 status code" do
+      get :contact
+      expect(response.status).to eq(200)
+    end
+  end
 end
